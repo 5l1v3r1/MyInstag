@@ -12,9 +12,23 @@
 		61295467232D2CE300757212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61295465232D2CE300757212 /* Main.storyboard */; };
 		61295469232D2CE500757212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61295468232D2CE500757212 /* Assets.xcassets */; };
 		6129546C232D2CE500757212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6129546A232D2CE500757212 /* LaunchScreen.storyboard */; };
+		61295475232D335E00757212 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295474232D335E00757212 /* libsqlite3.tbd */; };
+		61295477232D336900757212 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295476232D336900757212 /* libz.tbd */; };
+		61295479232D337200757212 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295478232D337200757212 /* AudioToolbox.framework */; };
+		6129547B232D337900757212 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129547A232D337900757212 /* CoreGraphics.framework */; };
+		6129547D232D337E00757212 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129547C232D337E00757212 /* CoreLocation.framework */; };
+		6129547F232D338400757212 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129547E232D338400757212 /* QuartzCore.framework */; };
+		61295481232D338C00757212 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295480232D338C00757212 /* Security.framework */; };
+		61295483232D339300757212 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295482232D339300757212 /* StoreKit.framework */; };
+		61295485232D339A00757212 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295484232D339A00757212 /* SystemConfiguration.framework */; };
+		61295487232D33B400757212 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61295486232D33B400757212 /* CFNetwork.framework */; };
+		AF6D88AD5FF7935AA12E703F /* Pods_MyInstag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB6A2E42AE15575A751B60D /* Pods_MyInstag.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F51963DBB1EABB96DAF6EFF /* Pods-MyInstag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInstag.debug.xcconfig"; path = "Target Support Files/Pods-MyInstag/Pods-MyInstag.debug.xcconfig"; sourceTree = "<group>"; };
+		520FCC35496CB3228A2E5472 /* Pods-MyInstag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyInstag.release.xcconfig"; path = "Target Support Files/Pods-MyInstag/Pods-MyInstag.release.xcconfig"; sourceTree = "<group>"; };
+		5FB6A2E42AE15575A751B60D /* Pods_MyInstag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyInstag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6129545E232D2CE300757212 /* MyInstag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyInstag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61295461232D2CE300757212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61295463232D2CE300757212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,16 @@
 		61295468232D2CE500757212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6129546B232D2CE500757212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6129546D232D2CE500757212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61295474232D335E00757212 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		61295476232D336900757212 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		61295478232D337200757212 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6129547A232D337900757212 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6129547C232D337E00757212 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6129547E232D338400757212 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		61295480232D338C00757212 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		61295482232D339300757212 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		61295484232D339A00757212 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		61295486232D33B400757212 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61295487232D33B400757212 /* CFNetwork.framework in Frameworks */,
+				61295485232D339A00757212 /* SystemConfiguration.framework in Frameworks */,
+				61295483232D339300757212 /* StoreKit.framework in Frameworks */,
+				61295481232D338C00757212 /* Security.framework in Frameworks */,
+				6129547F232D338400757212 /* QuartzCore.framework in Frameworks */,
+				6129547D232D337E00757212 /* CoreLocation.framework in Frameworks */,
+				6129547B232D337900757212 /* CoreGraphics.framework in Frameworks */,
+				61295479232D337200757212 /* AudioToolbox.framework in Frameworks */,
+				61295477232D336900757212 /* libz.tbd in Frameworks */,
+				61295475232D335E00757212 /* libsqlite3.tbd in Frameworks */,
+				AF6D88AD5FF7935AA12E703F /* Pods_MyInstag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE63477188B40BB8C92C97F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F51963DBB1EABB96DAF6EFF /* Pods-MyInstag.debug.xcconfig */,
+				520FCC35496CB3228A2E5472 /* Pods-MyInstag.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		61295455232D2CE300757212 = {
 			isa = PBXGroup;
 			children = (
 				61295460232D2CE300757212 /* MyInstag */,
 				6129545F232D2CE300757212 /* Products */,
+				61295473232D335E00757212 /* Frameworks */,
+				0CE63477188B40BB8C92C97F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +111,24 @@
 			path = MyInstag;
 			sourceTree = "<group>";
 		};
+		61295473232D335E00757212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61295486232D33B400757212 /* CFNetwork.framework */,
+				61295484232D339A00757212 /* SystemConfiguration.framework */,
+				61295482232D339300757212 /* StoreKit.framework */,
+				61295480232D338C00757212 /* Security.framework */,
+				6129547E232D338400757212 /* QuartzCore.framework */,
+				6129547C232D337E00757212 /* CoreLocation.framework */,
+				6129547A232D337900757212 /* CoreGraphics.framework */,
+				61295478232D337200757212 /* AudioToolbox.framework */,
+				61295476232D336900757212 /* libz.tbd */,
+				61295474232D335E00757212 /* libsqlite3.tbd */,
+				5FB6A2E42AE15575A751B60D /* Pods_MyInstag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61295470232D2CE500757212 /* Build configuration list for PBXNativeTarget "MyInstag" */;
 			buildPhases = (
+				C1290AD76DCA73E2D8D3BFF4 /* [CP] Check Pods Manifest.lock */,
 				6129545A232D2CE300757212 /* Sources */,
 				6129545B232D2CE300757212 /* Frameworks */,
 				6129545C232D2CE300757212 /* Resources */,
+				5529BA05965D6000C8F6FE13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5529BA05965D6000C8F6FE13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyInstag/Pods-MyInstag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyInstag/Pods-MyInstag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyInstag/Pods-MyInstag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1290AD76DCA73E2D8D3BFF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyInstag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6129545A232D2CE300757212 /* Sources */ = {
@@ -280,6 +389,7 @@
 		};
 		61295471232D2CE500757212 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F51963DBB1EABB96DAF6EFF /* Pods-MyInstag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +408,7 @@
 		};
 		61295472232D2CE500757212 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 520FCC35496CB3228A2E5472 /* Pods-MyInstag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

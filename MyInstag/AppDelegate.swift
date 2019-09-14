@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        //configurition of the app using Parse code in Heroku
+        let parseConfiguration = ParseClientConfiguration { (parse) in
+            //Accessing Heroku App via id& keys
+            parse.applicationId = "com.baykar.MyInstag"
+            parse.clientKey = "myMasterKey_com.baykar.MyInstag"
+            parse.server =  "http://miinstag.herokuapp.com/parse"
+            
+        }
+        
+        Parse.initialize(with: parseConfiguration)
+        
+        
+        
+        
+        
+        
         return true
     }
 
