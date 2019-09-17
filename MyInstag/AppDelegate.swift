@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,17 +19,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
         //configurition of the app using Parse code in Heroku
+        Parse.enableLocalDatastore()
+        PFAnalytics.trackAppOpened(launchOptions: launchOptions)
         let parseConfiguration = ParseClientConfiguration { (parse) in
-            //Accessing Heroku App via id& keys
-            parse.applicationId = "com.baykar.MyInstag"
-            parse.clientKey = "myMasterKey_com.baykar.MyInstag"
-            parse.server =  "http://miinstag.herokuapp.com/parse"
+            
+            //Accessing Heroku App via id & keys
+            parse.applicationId = APPLICATION_ID
+            parse.clientKey = CLIENT_KEY
+            parse.server =  SERVER_URL
             
         }
         
+        //parse init.................
         Parse.initialize(with: parseConfiguration)
         
         
+        
+        if let window = UIApplication.shared.windows.first as UIWindow? {
+            window.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+        
+        logIn()
         
         
         
@@ -58,6 +69,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func logIn()  {
+        
+        //check if the user is already created
+        
+        let userName = UserDefaults.standard.string(forKey: USER_NAME_DEFAULTS) ?? nil
+        
+        if userName != nil {
+            
+            let storyBoard = UIStoryboard(name: "MainScreen", bundle: nil)
+            let tapBar = storyBoard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            window?.rootViewController = tapBar
+            
+        }
+    }
 
 }
 
